@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Oasis Creation Pokhara — your go-to store for side bags, jackets, pants, purses, clothing and accessories for men & women. Order directly via WhatsApp." />
+  <meta name="theme-color" content="#0e0b09" />
+
+  <title>Oasis Creation Pokhara — Bags · Jackets · Clothing · Accessories</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="oasis1.css" />
+</head>
+
+<body>
+  <!-- ═══════════ PRELOADER ═══════════ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__mark"><span>O</span></div>
+      <div class="preloader__bar"><i id="preloaderBar"></i></div>
+      <p class="preloader__label">Oasis Creation Pokhara</p>
+    </div>
+  </div>
+
+  <!-- ═══════════ NOISE OVERLAY ═══════════ -->
+  <div class="noise" aria-hidden="true"></div>
+
+  <!-- ═══════════ CUSTOM CURSOR ═══════════ -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- ═══════════ SCROLL PROGRESS ═══════════ -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ═══════════ NAVIGATION ═══════════ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#top" class="brand" data-cursor="hover">
+        <span class="brand__mark"><i class="fa-solid fa-bag-shopping"></i></span>
+        <span class="brand__text">
+          <strong>Oasis</strong>
+          <em>Creation · Pokhara</em>
+        </span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#collection" data-cursor="hover">Collection</a>
+        <a href="#about" data-cursor="hover">About</a>
+        <a href="#visit" data-cursor="hover">Visit</a>
+        <a href="#connect" data-cursor="hover">Connect</a>
+      </nav>
+
+      <a
+        href="https://wa.me/9779856017909?text=Hi%20Oasis%20Creation%20Pokhara!%20I%20found%20you%20online%20and%20I'm%20interested%20in%20your%20items."
+        target="_blank"
+        rel="noopener"
+        class="nav__cta"
+        data-cursor="hover"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>Order on WhatsApp</span>
+      </a>
+
+      <button class="nav__burger" id="burger" aria-label="Menu" data-cursor="hover">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer">
+      <div class="drawer__inner">
+        <a href="#collection" data-close>Collection</a>
+        <a href="#about" data-close>About</a>
+        <a href="#visit" data-close>Visit</a>
+        <a href="#connect" data-close>Connect</a>
+
+        <div class="drawer__socials">
+          <a href="https://www.instagram.com/oasiscreationpokhara" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/oasisspapkr" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.tiktok.com/@manjubistaa" target="_blank" rel="noopener"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+
+        <a
+          href="https://wa.me/9779856017909?text=Hi%20Oasis%20Creation%20Pokhara!"
+          target="_blank"
+          rel="noopener"
+          class="drawer__wa"
+        >
+          <i class="fa-brands fa-whatsapp"></i> +977 9856017909
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <main id="top">
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__orb hero__orb--1" data-parallax="0.15"></span>
+        <span class="hero__orb hero__orb--2" data-parallax="-0.2"></span>
+        <span class="hero__grid" data-parallax="0.05"></span>
+      </div>
+
+      <div class="container hero__inner">
+        <p class="hero__eyebrow reveal">
+          <span class="dot"></span> Pokhara · Nepal · For Him & Her
+        </p>
+
+        <h1 class="hero__title">
+          <span class="line"><span>Bags. Jackets. Pants.</span></span>
+          <span class="line"><span>Style for <em>everyone.</em></span></span>
+        </h1>
+
+        <p class="hero__lede reveal">
+          Oasis Creation Pokhara is your local store for side bags, purses, jackets,
+          pants, clothing and accessories — curated for both men and women.
+          Message us on WhatsApp and we'll sort you out.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a
+            href="https://wa.me/9779856017909?text=Hi%20Oasis%20Creation!%20I'd%20like%20to%20order%20something."
+            target="_blank"
+            rel="noopener"
+            class="btn btn--primary"
+            data-magnetic
+            data-cursor="hover"
+          >
+            <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+          </a>
+
+          <a href="#collection" class="btn btn--ghost" data-magnetic data-cursor="hover">
+            Browse collection <i class="fa-solid fa-arrow-down"></i>
+          </a>
+        </div>
+
+        <div class="hero__meta reveal">
+          <div>
+            <strong>Men</strong>
+            <span>& Women</span>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <strong>Bags · Clothes</strong>
+            <span>Accessories</span>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <strong>DM</strong>
+            <span>Direct on WhatsApp</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="marquee">
+          <div class="marquee__track" id="marqueeTrack">
+            <span>Side Bags <i>✦</i></span>
+            <span>Purses <i>✦</i></span>
+            <span>Jackets <i>✦</i></span>
+            <span>Pants <i>✦</i></span>
+            <span>T-Shirts <i>✦</i></span>
+            <span>Hoodies <i>✦</i></span>
+            <span>Belts <i>✦</i></span>
+            <span>Wallets <i>✦</i></span>
+            <span>Caps <i>✦</i></span>
+            <span>Accessories <i>✦</i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ COLLECTION ═══════════ -->
+    <section class="section collection" id="collection">
+      <div class="container">
+        <div class="section__head">
+          <p class="section__eyebrow reveal"><span class="dot"></span> In the store</p>
+          <h2 class="section__title reveal">
+            Everything we stock,<br />
+            <em>ready to be yours.</em>
+          </h2>
+          <p class="section__sub reveal">
+            Tap any item and message us on WhatsApp — we'll confirm price, size, colour and delivery.
+          </p>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters reveal" id="filters">
+          <button class="filter is-active" data-filter="all" data-cursor="hover">All</button>
+          <button class="filter" data-filter="bags" data-cursor="hover">Bags & Purses</button>
+          <button class="filter" data-filter="jackets" data-cursor="hover">Jackets</button>
+          <button class="filter" data-filter="clothing" data-cursor="hover">Clothing</button>
+          <button class="filter" data-filter="accessories" data-cursor="hover">Accessories</button>
+        </div>
+
+        <div class="grid" id="grid">
+          <!-- JS renders items -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section class="section story" id="about">
+      <div class="container story__inner">
+        <div class="story__media reveal">
+          <div class="story__frame">
+            <div class="story__badge">
+              <i class="fa-solid fa-store"></i>
+              <span>Pokhara · Nepal</span>
+            </div>
+            <div class="story__image">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="story__content">
+          <p class="section__eyebrow reveal"><span class="dot"></span> About the store</p>
+          <h2 class="section__title reveal">
+            A store built for <em>everyday style.</em>
+          </h2>
+          <p class="reveal">
+            Oasis Creation Pokhara is a local shop bringing you a curated mix of
+            bags, clothing and accessories — picked for real everyday wear.
+            Whether you're after a sturdy side bag, a fresh jacket, a comfy pair of
+            pants or a small purse, we've got something for both men and women.
+          </p>
+          <p class="reveal">
+            No fancy promises — just good stuff at fair prices, and a friendly chat
+            on WhatsApp whenever you want to know more or place an order.
+          </p>
+
+          <ul class="story__points reveal">
+            <li><i class="fa-solid fa-check"></i> Bags, purses & side bags</li>
+            <li><i class="fa-solid fa-check"></i> Jackets, pants & everyday clothing</li>
+            <li><i class="fa-solid fa-check"></i> Accessories for men & women</li>
+            <li><i class="fa-solid fa-check"></i> Order direct on WhatsApp — no checkout needed</li>
+          </ul>
+
+          <a
+            href="https://wa.me/9779856017909?text=Hi!%20I'd%20like%20to%20know%20more%20about%20what%20you%20have%20in%20store."
+            target="_blank"
+            rel="noopener"
+            class="btn btn--primary reveal"
+            data-magnetic
+            data-cursor="hover"
+          >
+            <i class="fa-brands fa-whatsapp"></i> Ask what's in stock
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ VISIT / INFO ═══════════ -->
+    <section class="section visit" id="visit">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow reveal"><span class="dot"></span> Come say hi</p>
+          <h2 class="section__title reveal">Visit us in <em>Pokhara</em></h2>
+        </div>
+
+        <div class="visit__grid">
+          <a
+            class="visit__card reveal"
+            href="https://maps.app.goo.gl/3Rm4Rk8cU2goYrZi6"
+            target="_blank"
+            rel="noopener"
+            data-cursor="hover"
+          >
+            <div class="visit__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Find us on the map</h3>
+            <p>Pokhara, Nepal — open in Google Maps for live directions.</p>
+            <span class="visit__link">Open Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <a
+            class="visit__card reveal"
+            href="https://wa.me/9779856017909?text=Hi!%20I%20want%20to%20visit%20the%20store.%20What%20are%20your%20hours?"
+            target="_blank"
+            rel="noopener"
+            data-cursor="hover"
+          >
+            <div class="visit__icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <h3>Message before you come</h3>
+            <p>+977 9856017909 — ask what's new, or reserve an item before you drop by.</p>
+            <span class="visit__link">Open WhatsApp <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+
+          <a
+            class="visit__card reveal"
+            href="https://www.instagram.com/oasiscreationpokhara"
+            target="_blank"
+            rel="noopener"
+            data-cursor="hover"
+          >
+            <div class="visit__icon"><i class="fa-brands fa-instagram"></i></div>
+            <h3>See what's new</h3>
+            <p>Fresh stock, new arrivals and store updates on Instagram.</p>
+            <span class="visit__link">@oasiscreationpokhara <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════ BIG CTA ═══════════ -->
+    <section class="cta">
+      <div class="container cta__inner reveal">
+        <h2 class="cta__title">
+          Seen something you like?<br />
+          <em>Let's get it to you.</em>
+        </h2>
+        <p class="cta__sub">
+          No checkout, no forms. Just message us on WhatsApp and we'll take it from there.
+        </p>
+
+        <a
+          href="https://wa.me/9779856017909?text=Hi%20Oasis%20Creation%20Pokhara!%20I%20want%20to%20buy%20an%20item%20from%20your%20website."
+          target="_blank"
+          rel="noopener"
+          class="btn btn--whatsapp btn--xl"
+          data-magnetic
+          data-cursor="hover"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          Message us — 9856017909
+        </a>
+
+        <p class="cta__tiny">Usually replies within a few hours ✦ Pokhara time</p>
+      </div>
+    </section>
+
+    <!-- ═══════════ CONNECT ═══════════ -->
+    <section class="section connect" id="connect">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <p class="section__eyebrow reveal"><span class="dot"></span> Stay connected</p>
+          <h2 class="section__title reveal">Follow the <em>store</em></h2>
+        </div>
+
+        <div class="connect__grid">
+          <a
+            class="social-card social-card--ig reveal"
+            href="https://www.instagram.com/oasiscreationpokhara"
+            target="_blank"
+            rel="noopener"
+            data-cursor="hover"
+          >
+            <i class="fa-brands fa-instagram"></i>
+            <div>
+              <strong>Instagram</strong>
+              <span>@oasiscreationpokhara</span>
+            </div>
+            <i class="fa-solid fa-arrow-right arrow"></i>
+          </a>
+
+          <a
+            class="social-card social-card--fb reveal"
+            href="https://www.facebook.com/oasisspapkr"
+            target="_blank"
+            rel="noopener"
+            data-cursor="hover"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+            <div>
+              <strong>Facebook</strong>
+              <span>oasisspapkr</span>
+            </div>
+            <i class="fa-solid fa-arrow-right arrow"></i>
+          </a>
+
+          <a
+            class="social-card social-card--tt reveal"
+            href="https://www.tiktok.com/@manjubistaa"
+            target="_blank"
+            rel="noopener"
+            data-cursor="hover"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+            <div>
+              <strong>TikTok</strong>
+              <span>@manjubistaa</span>
+            </div>
+            <i class="fa-solid fa-arrow-right arrow"></i>
+          </a>
+
+          <a
+            class="social-card social-card--wa reveal"
+            href="https://wa.me/9779856017909?text=Hi%20Oasis%20Creation%20Pokhara!"
+            target="_blank"
+            rel="noopener"
+            data-cursor="hover"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <span>+977 9856017909</span>
+            </div>
+            <i class="fa-solid fa-arrow-right arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark"><i class="fa-solid fa-bag-shopping"></i></span>
+        <div>
+          <strong>Oasis Creation</strong>
+          <em>Pokhara · Nepal</em>
+        </div>
+      </div>
+
+      <p class="footer__note">
+        Bags · Jackets · Pants · Accessories for men & women. © <span id="year"></span> Oasis Creation Pokhara.
+      </p>
+
+      <div class="footer__socials">
+        <a href="https://www.instagram.com/oasiscreationpokhara" target="_blank" rel="noopener" data-cursor="hover"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/oasisspapkr" target="_blank" rel="noopener" data-cursor="hover"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@manjubistaa" target="_blank" rel="noopener" data-cursor="hover"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://wa.me/9779856017909" target="_blank" rel="noopener" data-cursor="hover"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a
+    href="https://wa.me/9779856017909?text=Hi%20Oasis%20Creation%20Pokhara!"
+    target="_blank"
+    rel="noopener"
+    class="float-wa"
+    data-cursor="hover"
+    aria-label="Chat on WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-wa__pulse"></span>
+  </a>
+
+  <!-- Scripts -->
+  <script src="oasis1.js"></script>
+</body>
+</html>
